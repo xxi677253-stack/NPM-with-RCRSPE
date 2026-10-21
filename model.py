@@ -100,7 +100,7 @@ class FinalModel(nn.Module):
         self.reg = nn.Sequential(
             nn.Linear(48, 64),
             nn.ReLU(),
-            nn.Dropout(0.2),  # Aligned with manuscript Section 3.6
+            nn.Dropout(0.2),  
             nn.Linear(64, 1)
         )
 
