@@ -1,7 +1,3 @@
-"""Exact NPM-Net module definitions used for the released weight state_dict.
-The classification and regression heads both include Dropout(0.2).
-Dropout contains no state_dict parameters and is therefore defined in code.
-"""
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
