@@ -1,16 +1,4 @@
-"""Standalone, data-independent RCRSPE implementation.
 
-Implements refined composite rescaled range permutation entropy:
-  1. For every scale beta=1,...,20, all beta offset coarse-grained sequences;
-  2. Delay embedding (m=6, tau=1);
-  3. Stable ordinal patterns, range/(Std + epsilon) weights;
-  4. Pooled weighted pattern counts ACROSS all offsets;
-  5. Shannon entropy without division by log(m!).
-
-Certain numerical conventions are not universally standardized. This
-reference implementation uses: sample standard deviation (ddof=1),
-epsilon=1e-12, and stable order for ties.
-"""
 from functools import lru_cache
 from itertools import permutations
 from math import factorial
